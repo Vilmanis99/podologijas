@@ -1,20 +1,25 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Brand: olīvzaļš (#5E620C) + khaki (#CDC48D) */
+  /* Brand colors per client (Podologijas_klinika_pardaugava_krasu_kodi.jpg):
+     - Olīvzaļš: #5E620C (primary, text, accents)
+     - Khaki:    #CDC48D (accent surfaces, e.g. price list, vacancies) */
   --color-primary: #5E620C;
-  --color-primary-container: #7A8019;
-  --color-secondary: #8A6B2E;
-  --color-secondary-container: #E8E2BE;
-  --color-surface: #FBF9F0;
-  --color-surface-container-lowest: #FFFFFE;
-  --color-surface-container-low: #F4F0DF;
-  --color-surface-container: #EDE8CF;
-  --color-surface-container-high: #E5DEC0;
-  --color-surface-container-highest: #DCD4AE;
+  --color-primary-container: #797D26;
+  --color-secondary: #5E620C;
+  --color-secondary-container: #CDC48D;
+
+  /* Soft cream-khaki gradient for main surfaces — keeps brand warmth without overwhelming */
+  --color-surface: #F6F1DD;
+  --color-surface-container-lowest: #FFFEF8;
+  --color-surface-container-low: #EDE5C2;
+  --color-surface-container: #E2D8AE;
+  --color-surface-container-high: #D6CB9A;
+  --color-surface-container-highest: #CDC48D;
+
   --color-on-surface: #2A2C0E;
-  --color-on-surface-variant: #56583B;
-  --color-outline-variant: rgba(86, 88, 59, 0.15);
+  --color-on-surface-variant: #4A4D2A;
+  --color-outline-variant: rgba(94, 98, 12, 0.18);
 
   --font-heading: "Poiret One", sans-serif;
   --font-body: "Inter", sans-serif;
@@ -33,6 +38,6 @@ html {
 
 /* Selection color */
 ::selection {
-  background-color: var(--color-secondary-container);
-  color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-surface);
 }
