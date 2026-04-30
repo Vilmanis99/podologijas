@@ -186,12 +186,12 @@ function ServiceRow({
         className="w-full flex items-center justify-between gap-4 text-left p-4 group"
       >
         <div className="flex-1 min-w-0">
-          <h4 className="font-heading text-[1rem] sm:text-[1.05rem] text-on-surface group-hover:text-primary transition-colors">
+          <h4 className="text-sm sm:text-base font-medium text-on-surface group-hover:text-primary transition-colors">
             {service.name}
           </h4>
         </div>
         <div className="flex items-center gap-4 flex-shrink-0">
-          <span className="font-heading text-primary text-base sm:text-lg min-w-[3rem] text-right">
+          <span className="text-primary text-base sm:text-lg font-semibold tracking-tight min-w-[3rem] text-right">
             {service.price}
           </span>
           <div

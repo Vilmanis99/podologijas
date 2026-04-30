@@ -68,7 +68,7 @@ export default function Specialists() {
               </div>
 
               {/* Info */}
-              <h3 className="font-heading text-xl text-on-surface">
+              <h3 className="text-lg font-semibold text-on-surface tracking-tight">
                 {person.name}
               </h3>
               <p className="text-secondary text-xs font-semibold uppercase tracking-[0.05em] mt-1">
