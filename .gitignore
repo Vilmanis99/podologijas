@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Claude Code configuration
+.claude/
+
+# Design source files (large, not needed at runtime)
+*.eps
