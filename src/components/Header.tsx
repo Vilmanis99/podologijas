@@ -22,20 +22,20 @@ export default function Header() {
 
   return (
     <header className="fixed top-9 left-0 right-0 z-50">
-      <div className="mx-4 mt-4 rounded-2xl bg-primary/95 backdrop-blur-xl px-6 py-4 flex items-center justify-between gap-4">
+      <div className="mx-4 mt-4 rounded-2xl bg-surface-container-lowest/95 backdrop-blur-xl shadow-lg shadow-primary/5 px-5 sm:px-7 py-3 flex items-center justify-between gap-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 flex-shrink-0">
+        <Link href="/" className="flex items-center gap-3 sm:gap-4 flex-shrink-0">
           <Image
-            src="/logo-symbol-light.png"
+            src="/logo-symbol.png"
             alt="Podoloģijas Klīnika Pārdaugava"
-            width={48}
-            height={48}
-            className="w-10 h-10 sm:w-11 sm:h-11 object-contain"
+            width={64}
+            height={64}
+            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain"
             priority
           />
-          <span className="font-heading text-white tracking-tight leading-tight">
-            <span className="block text-base sm:text-lg md:text-xl">Podoloģijas Klīnika</span>
-            <span className="block text-secondary-container/80 text-[0.6rem] sm:text-[0.65rem] md:text-xs font-body font-semibold tracking-[0.2em] uppercase mt-0.5">Pārdaugava</span>
+          <span className="text-primary tracking-tight leading-tight">
+            <span className="block text-base sm:text-lg md:text-xl font-semibold">Podoloģijas Klīnika</span>
+            <span className="block text-on-surface-variant text-[0.65rem] sm:text-xs font-semibold tracking-[0.2em] uppercase mt-0.5">Pārdaugava</span>
           </span>
         </Link>
 
@@ -45,7 +45,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-white/80 hover:text-white text-sm font-medium transition-colors duration-200"
+              className="text-on-surface hover:text-primary text-sm font-medium transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -53,18 +53,21 @@ export default function Header() {
         </nav>
 
         {/* Desktop CTA */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-5">
           <a
             href={`tel:${PHONE}`}
-            className="text-white/80 hover:text-white text-sm transition-colors hidden xl:inline"
+            className="text-primary hover:text-primary-container text-base font-semibold transition-colors hidden xl:inline-flex items-center gap-2"
           >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
             {PHONE_DISPLAY}
           </a>
           <a
             href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-primary-container to-primary-container/80 text-white text-xs font-semibold uppercase tracking-widest px-5 py-2.5 rounded-xl hover:scale-[1.02] transition-transform duration-200"
+            className="bg-primary text-secondary-container text-xs font-bold uppercase tracking-widest px-6 py-3 rounded-xl hover:bg-primary-container hover:scale-[1.02] transition-all duration-200 shadow-md shadow-primary/20"
           >
             Pieteikties
           </a>
@@ -73,10 +76,10 @@ export default function Header() {
         {/* Mobile burger */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden text-white p-2"
+          className="lg:hidden text-primary p-2"
           aria-label="Atvērt izvēlni"
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             {mobileOpen ? (
               <path d="M6 6l12 12M6 18L18 6" />
             ) : (
@@ -88,29 +91,32 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden mx-4 mt-2 rounded-2xl bg-primary/95 backdrop-blur-xl px-6 py-6 flex flex-col gap-4">
+        <div className="lg:hidden mx-4 mt-2 rounded-2xl bg-surface-container-lowest/98 backdrop-blur-xl shadow-lg shadow-primary/5 px-6 py-6 flex flex-col gap-4">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="text-white/80 hover:text-white text-base font-medium transition-colors"
+              className="text-on-surface hover:text-primary text-base font-medium transition-colors"
             >
               {link.label}
             </a>
           ))}
-          <hr className="border-white/10" />
+          <hr className="border-on-surface-variant/15" />
           <a
             href={`tel:${PHONE}`}
-            className="text-white/80 hover:text-white text-sm"
+            className="text-primary text-base font-semibold inline-flex items-center gap-2"
           >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
             {PHONE_DISPLAY}
           </a>
           <a
             href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-primary-container to-primary-container/80 text-white text-sm font-semibold uppercase tracking-widest px-5 py-3 rounded-xl text-center hover:scale-[1.02] transition-transform duration-200"
+            className="bg-primary text-secondary-container text-sm font-bold uppercase tracking-widest px-6 py-3.5 rounded-xl text-center hover:bg-primary-container transition-colors duration-200 shadow-md shadow-primary/20"
           >
             Pieteikties
           </a>
