@@ -8,7 +8,7 @@ export default function PromoStrip() {
   if (!visible) return null;
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60] bg-secondary-container text-primary border-b border-primary/10">
+    <div className="bg-secondary-container text-primary border-b border-primary/10">
       <div className="max-w-6xl mx-auto px-6 py-2.5 flex items-center justify-center gap-3 text-xs sm:text-sm relative">
         <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-primary/40" />
         <p className="text-center leading-snug">

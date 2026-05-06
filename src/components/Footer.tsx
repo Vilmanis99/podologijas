@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,21 +7,14 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-4">
-              <Image
-                src="/logo-symbol-light.png"
-                alt="Podoloģijas Klīnika Pārdaugava"
-                width={72}
-                height={72}
-                className="w-16 h-16 object-contain flex-shrink-0"
-              />
+            <Link href="/" className="inline-flex items-center">
               <span className="font-heading text-white tracking-tight leading-tight">
                 <span className="block text-2xl">Podoloģijas Klīnika</span>
                 <span className="block text-secondary-container/80 text-xs font-body font-semibold tracking-[0.2em] uppercase mt-1">Pārdaugava</span>
               </span>
             </Link>
             <p className="text-sm leading-relaxed mt-5 max-w-sm">
-              Profesionāla podoloģijas klīnika Pārdaugavā. Rūpējamies par jūsu pēdu
+              Profesionāla podoloģijas klīnika Pārdaugavā. Rūpējamies par Jūsu pēdu
               veselību ar mūsdienīgām metodēm un individuālu pieeju.
             </p>
 

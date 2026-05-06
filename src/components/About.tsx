@@ -12,7 +12,7 @@ export default function About() {
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-primary leading-[1.1] mb-6">
               Podoloģijas prakse, kurai
-              <br className="hidden sm:block" />
+              <br />
               varat uzticēties
             </h2>
             <p className="text-on-surface-variant text-base leading-[1.6] mb-6">
@@ -20,11 +20,18 @@ export default function About() {
               pieredzi pēdu veselības aprūpē. Mēs izmantojam mūsdienīgas tehnoloģijas
               un individuālu pieeju katram pacientam.
             </p>
-            <p className="text-on-surface-variant text-base leading-[1.6]">
+            <p className="text-on-surface-variant text-base leading-[1.6] mb-6">
               Neatkarīgi no tā, vai jums nepieciešama profilaktiska aprūpe vai
               specifiska ārstēšana, mēs esam šeit, lai palīdzētu jums spert
               katru soli ar pārliecību.
             </p>
+            <div className="inline-flex items-center gap-2 text-sm text-on-surface-variant">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-75 animate-ping" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+              </span>
+              <span className="text-on-surface font-medium">Pieņemam akūti</span>
+            </div>
           </div>
 
           {/* Image */}
@@ -41,25 +48,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-16 md:mt-20">
-          {[
-            { value: "10+", label: "Gadu pieredze" },
-            { value: "5000+", label: "Apmierināti pacienti" },
-            { value: "15+", label: "Pakalpojumi" },
-            { value: "4.9", label: "Vidējais vērtējums" },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="bg-surface-container-low rounded-2xl p-5 sm:p-6 text-center"
-            >
-              <p className="font-heading text-3xl md:text-4xl text-primary mb-1">
-                {stat.value}
-              </p>
-              <p className="text-on-surface-variant text-xs sm:text-sm">{stat.label}</p>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

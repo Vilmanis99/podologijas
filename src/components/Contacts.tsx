@@ -91,13 +91,23 @@ export default function Contacts() {
                 <div className="text-on-surface-variant text-sm leading-relaxed space-y-1">
                   <p>
                     <span className="text-on-surface font-medium">Pieturas:</span> &ldquo;Progresa iela&rdquo;,
-                    &ldquo;Imanta&rdquo;, &ldquo;Kurzemes prospekts&rdquo;, &ldquo;Dammes iela&rdquo;
+                    &ldquo;Kurzemes prospekts&rdquo;, &ldquo;Dammes iela&rdquo;,
+                    &ldquo;Observatorijas iela&rdquo;, &ldquo;Jūrmalas gatve&rdquo;
                   </p>
                   <p>
-                    <span className="text-on-surface font-medium">Tramvajs:</span> Nr. 1, Nr. 9
+                    <span className="text-on-surface font-medium">Tramvajs:</span> Nr. 1
                   </p>
                   <p>
                     <span className="text-on-surface font-medium">Autobuss:</span> Nr. 36, Nr. 37, Nr. 41
+                  </p>
+                  <p>
+                    <span className="text-on-surface font-medium">Autobuss Nr. 46:</span> &ldquo;Observatorijas iela&rdquo;
+                  </p>
+                  <p>
+                    <span className="text-on-surface font-medium">Autobuss Nr. 21:</span> &ldquo;Observatorijas iela&rdquo;
+                  </p>
+                  <p>
+                    <span className="text-on-surface font-medium">Autobuss Nr. 4:</span> &ldquo;Kurzemes prospekts&rdquo;
                   </p>
                 </div>
               </div>

@@ -21,22 +21,18 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="fixed top-9 left-0 right-0 z-50">
-      <div className="mx-4 mt-4 rounded-2xl bg-surface-container-lowest/95 backdrop-blur-xl shadow-lg shadow-primary/5 px-5 sm:px-7 py-3 flex items-center justify-between gap-4">
+    <header>
+      <div className="mx-4 mt-4 rounded-2xl bg-surface-container-lowest/95 backdrop-blur-xl shadow-lg shadow-primary/5 px-5 sm:px-7 py-3 relative flex items-center justify-center md:justify-between gap-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 sm:gap-4 flex-shrink-0">
+        <Link href="/" className="flex items-center flex-shrink-0" aria-label="Podoloģijas Klīnika Pārdaugava">
           <Image
-            src="/logo-symbol.png"
+            src="/logo-full.png"
             alt="Podoloģijas Klīnika Pārdaugava"
-            width={64}
-            height={64}
-            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain"
+            width={240}
+            height={240}
             priority
+            className="h-16 sm:h-20 md:h-20 lg:h-24 w-auto object-contain"
           />
-          <span className="text-primary tracking-tight leading-tight">
-            <span className="block text-base sm:text-lg md:text-xl font-semibold">Podoloģijas Klīnika</span>
-            <span className="block text-on-surface-variant text-[0.65rem] sm:text-xs font-semibold tracking-[0.2em] uppercase mt-0.5">Pārdaugava</span>
-          </span>
         </Link>
 
         {/* Desktop Nav */}
@@ -76,7 +72,7 @@ export default function Header() {
         {/* Mobile burger */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="lg:hidden text-primary p-2"
+          className="lg:hidden text-primary p-2 absolute right-3 sm:right-4 md:static"
           aria-label="Atvērt izvēlni"
         >
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

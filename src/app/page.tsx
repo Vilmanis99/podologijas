@@ -12,8 +12,10 @@ import PromoStrip from "@/components/PromoStrip";
 export default function Home() {
   return (
     <>
-      <PromoStrip />
-      <Header />
+      <div className="md:fixed md:top-0 md:left-0 md:right-0 md:z-50">
+        <PromoStrip />
+        <Header />
+      </div>
       <main>
         <Hero />
         <About />
