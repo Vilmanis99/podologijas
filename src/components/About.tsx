@@ -38,8 +38,8 @@ export default function About() {
           <div className="relative order-first md:order-last">
             <div className="aspect-[4/5] rounded-tl-[2rem] rounded-tr-xl rounded-bl-xl rounded-br-[2rem] overflow-hidden relative">
               <Image
-                src="/images/about.jpg"
-                alt="Mūsu klīnika"
+                src="/images/about-reception.jpg"
+                alt="Podoloģijas Klīnika Pārdaugava reģistratūra"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"

@@ -15,28 +15,28 @@ const specialists: Specialist[] = [
     role: "Sertificēts podologs",
     description:
       "Klīnikas vadītāja un sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu aprūpē un nagu korekcijā.",
-    image: "/images/specialist-1.jpg",
+    image: "/images/specialist-anete.jpg",
   },
   {
     name: "Kristīne Ozola",
     role: "Sertificēts podologs",
     description:
       "Sertificēta podoloģe ar pieredzi gan terapeitiskajā, gan estētiskajā pēdu aprūpē. Individuāla pieeja katram klientam.",
-    image: "/images/specialist-2.jpg",
+    image: "/images/specialist-kristine.jpg",
   },
   {
     name: "Ieva Govša",
     role: "Sertificēts podologs",
     description:
       "Sertificēta podoloģe ar zināšanām dažādu pēdu problēmu diagnostikā un ārstēšanā. Strādā ar mūsdienīgām metodēm un tehnoloģijām.",
-    image: "/images/specialist-3.jpg",
+    image: "/images/specialist-ieva.jpg",
   },
   {
     name: "Lāsma Lukss",
     role: "Sertificēts podologs",
     description:
       "Sertificēta podoloģe, kas pievērš īpašu uzmanību profilaksei un pacienta komfortam. Regulāri papildina zināšanas profesionālos kursos.",
-    image: "/images/specialist-1.jpg",
+    image: "/images/specialist-lasma.jpg",
   },
 ];
 
