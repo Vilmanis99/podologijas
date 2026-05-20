@@ -18,6 +18,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Podoloģijas Klīnika Pārdaugava | podologijasklinika.lv",
   description: "Profesionāla pēdu veselības aprūpe Pārdaugavā. Podoloģija, medicīniskā pedikīra, nagu korekcija. Piesakieties vizītei online.",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: { index: false, follow: false },
+  },
 };
 
 export default function RootLayout({
