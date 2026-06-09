@@ -14,28 +14,28 @@ const specialists: Specialist[] = [
     name: "Anete Kuhta",
     role: "Sertificēts podologs",
     description:
-      "Klīnikas vadītāja un sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu aprūpē un nagu korekcijā.",
+      "Klīnikas vadītāja un sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu aprūpē un nagu korekcijā. Pastāvīgi papildina zināšanas profesionālos kursos.",
     image: "/images/specialist-anete.jpg",
   },
   {
     name: "Kristīne Ozola",
     role: "Sertificēts podologs",
     description:
-      "Sertificēta podoloģe ar pieredzi gan terapeitiskajā, gan estētiskajā pēdu aprūpē. Individuāla pieeja katram klientam.",
+      "Klīnikas vadītāja un sertificēta podoloģe ar profesionālu pieeju katram pacientam un pieredzi estētiskajā pēdu aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
     image: "/images/specialist-kristine.jpg",
   },
   {
     name: "Ieva Govša",
     role: "Sertificēts podologs",
     description:
-      "Sertificēta podoloģe ar zināšanām dažādu pēdu problēmu diagnostikā un ārstēšanā. Strādā ar mūsdienīgām metodēm un tehnoloģijām.",
+      "Sertificēta podoloģe ar profesionālu pieeju katram pacientam un pieredzi estētiskajā pēdu aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
     image: "/images/specialist-ieva.jpg",
   },
   {
-    name: "Lāsma Lukss",
+    name: "Lāsma Luksa",
     role: "Sertificēts podologs",
     description:
-      "Sertificēta podoloģe, kas pievērš īpašu uzmanību profilaksei un pacienta komfortam. Regulāri papildina zināšanas profesionālos kursos.",
+      "Sertificēta podoloģe ar profesionālu pieeju katram pacientam un pieredzi estētiskajā pēdu aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
     image: "/images/specialist-lasma.jpg",
   },
 ];

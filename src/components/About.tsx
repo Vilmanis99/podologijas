@@ -16,8 +16,8 @@ export default function About() {
               varat uzticēties
             </h2>
             <p className="text-on-surface-variant text-base leading-[1.6] mb-6">
-              Mūsu klīnikā strādā sertificēti podoloģijas speciālisti ar ilggadēju
-              pieredzi pēdu veselības aprūpē. Mēs izmantojam mūsdienīgas tehnoloģijas
+              Mūsu klīnikā strādā sertificēti podoloģijas speciālisti ar pieredzi
+              pēdu veselības aprūpē. Mēs izmantojam mūsdienīgas tehnoloģijas
               un individuālu pieeju katram pacientam.
             </p>
             <p className="text-on-surface-variant text-base leading-[1.6] mb-6">
@@ -25,12 +25,19 @@ export default function About() {
               specifiska ārstēšana, mēs esam šeit, lai palīdzētu jums spert
               katru soli ar pārliecību.
             </p>
-            <div className="inline-flex items-center gap-2 text-sm text-on-surface-variant">
-              <span className="relative flex h-2 w-2">
+            <div className="inline-flex items-center gap-3 rounded-2xl border border-primary/20 bg-primary/5 px-5 py-4">
+              <span className="relative flex h-3 w-3 shrink-0">
                 <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-75 animate-ping" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+                <span className="relative inline-flex h-3 w-3 rounded-full bg-primary" />
               </span>
-              <span className="text-on-surface font-medium">Pieņemam akūti</span>
+              <span>
+                <span className="block text-base font-semibold text-primary leading-tight">
+                  Pieņemam akūti
+                </span>
+                <span className="block text-sm text-on-surface-variant leading-tight">
+                  Sazinieties ar mums — palīdzēsim arī steidzamos gadījumos
+                </span>
+              </span>
             </div>
           </div>
 
@@ -38,8 +45,8 @@ export default function About() {
           <div className="relative order-first md:order-last">
             <div className="aspect-[4/5] rounded-tl-[2rem] rounded-tr-xl rounded-bl-xl rounded-br-[2rem] overflow-hidden relative">
               <Image
-                src="/images/about-reception.jpg"
-                alt="Podoloģijas Klīnika Pārdaugava reģistratūra"
+                src="/images/about-clinic.jpg"
+                alt="Podoloģijas Klīnika Pārdaugava"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"

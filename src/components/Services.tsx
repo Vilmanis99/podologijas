@@ -74,18 +74,6 @@ const serviceGroups: ServiceGroup[] = [
         description:
           "Pilna ārstnieciskā pēdu aprūpe ar īpašu cenu senioriem darba dienās no plkst. 9:00 līdz 13:00.",
       },
-      {
-        name: "Kāju nagu ārstnieciskā aprūpe (seniori 65+)",
-        price: "30 €",
-        description:
-          "Mērķtiecīga kāju nagu apstrāde un kopšana.",
-      },
-      {
-        name: "Pēdu ārstnieciskā aprūpe (seniori 65+)",
-        price: "30 €",
-        description:
-          "Profilaktiska un ārstnieciska pēdu kopšana.",
-      },
     ],
   },
   {
