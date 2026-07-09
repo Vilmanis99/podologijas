@@ -14,28 +14,28 @@ const specialists: Specialist[] = [
     name: "Anete Kuhta",
     role: "Sertificēts podologs",
     description:
-      "Klīnikas vadītāja un sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu aprūpē un nagu korekcijā. Pastāvīgi papildina zināšanas profesionālos kursos.",
+      "Klīnikas vadītāja un sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
     image: "/images/specialist-anete.jpg",
   },
   {
     name: "Kristīne Ozola",
     role: "Sertificēts podologs",
     description:
-      "Klīnikas vadītāja un sertificēta podoloģe ar profesionālu pieeju katram pacientam un pieredzi estētiskajā pēdu aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
+      "Klīnikas vadītāja un sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē, estētiskajā pēdu aprūpē un roku ārstnieciskajā aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
     image: "/images/specialist-kristine.jpg",
   },
   {
     name: "Ieva Govša",
     role: "Sertificēts podologs",
     description:
-      "Sertificēta podoloģe ar profesionālu pieeju katram pacientam un pieredzi estētiskajā pēdu aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
+      "Sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē un roku ārstnieciskajā aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
     image: "/images/specialist-ieva.jpg",
   },
   {
     name: "Lāsma Luksa",
     role: "Sertificēts podologs",
     description:
-      "Sertificēta podoloģe ar profesionālu pieeju katram pacientam un pieredzi estētiskajā pēdu aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
+      "Sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē un estētiskajā pēdu aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
     image: "/images/specialist-lasma.jpg",
   },
 ];

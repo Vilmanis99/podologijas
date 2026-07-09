@@ -145,8 +145,8 @@ const serviceGroups: ServiceGroup[] = [
           "Pēdu brūču aprūpe un ārstēšana.",
       },
       {
-        name: "Ārstnieciskā roku aprūpe",
-        price: "25 €",
+        name: "Ārstnieciskā roku aprūpe bez pārklājuma",
+        price: "30 €",
         description:
           "Profesionāla roku ārstnieciskā aprūpe ar medicīnisku pieeju.",
       },

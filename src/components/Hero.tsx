@@ -27,7 +27,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-on-surface-variant text-base md:text-lg max-w-xl mb-10 leading-relaxed">
-              Modernā podoloģijas klīnikā apvienojam medicīnisko precizitāti ar
+              Mūsu podoloģijas klīnikā apvienojam medicīnisko precizitāti ar
               iejūtīgu pieeju, lai katrs Jūsu solis būtu viegls un pārliecināts.
             </p>
 

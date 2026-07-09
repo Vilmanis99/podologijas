@@ -31,3 +31,13 @@ export function proxy(request: NextRequest) {
     },
   });
 }
+
+export const config = {
+  // Protect every HTML page/route, but let static assets through so the image
+  // optimizer can fetch source files (its internal fetch carries no auth) and
+  // so CSS/JS/fonts load on the 401 challenge page. Pages still require the
+  // password → Google cannot index the site.
+  matcher: [
+    "/((?!_next/static|_next/image|_next/data|favicon.ico|.*\\.(?:jpg|jpeg|png|gif|svg|webp|avif|ico|css|js|woff|woff2|ttf|map)$).*)",
+  ],
+};
