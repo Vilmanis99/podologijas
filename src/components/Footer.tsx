@@ -1,21 +1,34 @@
 import Link from "next/link";
+import { dict, type Lang } from "@/i18n/dictionaries";
 
-export default function Footer() {
+export default function Footer({ lang }: { lang: Lang }) {
+  const t = dict[lang].footer;
+  const home = lang === "ru" ? "/ru" : "/";
+  const prefix = lang === "ru" ? "/ru" : "";
+
+  const navLinks = [
+    { label: dict[lang].nav.sakums, href: `${home}#sakums` },
+    { label: dict[lang].nav.parMums, href: `${home}#par-mums` },
+    { label: dict[lang].nav.pakalpojumi, href: `${home}#pakalpojumi` },
+    { label: dict[lang].nav.specialisti, href: `${home}#specialisti` },
+    { label: dict[lang].nav.vakances, href: `${home}#vakances` },
+    { label: dict[lang].nav.kontakti, href: `${home}#kontakti` },
+  ];
+
   return (
     <footer className="bg-primary text-white/70">
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-flex items-center">
+            <Link href={home} className="inline-flex items-center">
               <span className="font-heading text-white tracking-tight leading-tight">
                 <span className="block text-2xl">Podoloģijas Klīnika</span>
                 <span className="block text-secondary-container/80 text-xs font-body font-semibold tracking-[0.2em] uppercase mt-1">Pārdaugava</span>
               </span>
             </Link>
             <p className="text-sm leading-relaxed mt-5 max-w-sm">
-              Profesionāla podoloģijas klīnika Pārdaugavā. Rūpējamies par Jūsu pēdu
-              veselību ar mūsdienīgām metodēm un individuālu pieeju.
+              {t.tagline}
             </p>
 
             {/* Social icons */}
@@ -44,17 +57,10 @@ export default function Footer() {
           {/* Quick links */}
           <div>
             <h4 className="font-heading text-base text-white mb-4">
-              Navigācija
+              {t.navTitle}
             </h4>
             <div className="space-y-2">
-              {[
-                { label: "Sākums", href: "#sakums" },
-                { label: "Par mums", href: "#par-mums" },
-                { label: "Pakalpojumi", href: "#pakalpojumi" },
-                { label: "Speciālisti", href: "#specialisti" },
-                { label: "Vakances", href: "#vakances" },
-                { label: "Kontakti", href: "#kontakti" },
-              ].map((link) => (
+              {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
@@ -69,12 +75,12 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-heading text-base text-white mb-4">
-              Kontakti
+              {t.contactTitle}
             </h4>
             <div className="space-y-2 text-sm">
-              <p>TC &ldquo;Imanta&rdquo; – K3</p>
-              <p>Kurzemes prospekts 3</p>
-              <p>Rīga, Imanta</p>
+              {t.address.map((line, i) => (
+                <p key={i}>{line}</p>
+              ))}
               <a href="tel:+37125455994" className="block hover:text-white transition-colors mt-3">
                 +371 25 455 994
               </a>
@@ -87,27 +93,35 @@ export default function Footer() {
 
         {/* Rekviziti */}
         <div className="mt-14 pt-8 border-t border-white/10">
-          <h4 className="font-heading text-base text-white mb-4">Rekvizīti</h4>
+          <h4 className="font-heading text-base text-white mb-4">{t.rekvizitiTitle}</h4>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-2 gap-x-6 text-xs leading-relaxed">
             <div>
-              <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">Uzņēmums</p>
+              <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">{t.companyLabel}</p>
               <p>SIA &ldquo;AK Podo&rdquo;</p>
             </div>
             <div>
-              <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">Reģ. Nr.</p>
+              <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">{t.regLabel}</p>
               <p>40203720722</p>
             </div>
             <div>
-              <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">PVN maks. Nr.</p>
+              <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">{t.pvnLabel}</p>
               <p>LV40203720722</p>
             </div>
             <div>
-              <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">Juridiskā adrese</p>
-              <p>Zentenes iela 22-60, Rīga, LV-1069</p>
+              <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">{t.legalAddrLabel}</p>
+              <p>{t.legalAddr}</p>
             </div>
             <div className="sm:col-span-2">
-              <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">Bankas konts</p>
-              <p>LV09RIKO0002930399722, Luminor banka</p>
+              <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">{t.bankLabel}</p>
+              <p>LV09RIKO0002930399722</p>
+            </div>
+            <div>
+              <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">{t.swiftLabel}</p>
+              <p>RIKOLV2X</p>
+            </div>
+            <div>
+              <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">{t.bankNameLabel}</p>
+              <p>{t.bankName}</p>
             </div>
           </div>
         </div>
@@ -115,15 +129,21 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs">
-            © {new Date().getFullYear()} Podoloģijas Klīnika Pārdaugava. Visas tiesības aizsargātas.
+            © {new Date().getFullYear()} Podoloģijas Klīnika Pārdaugava. {t.rights}
           </p>
-          <div className="flex gap-6 text-xs">
-            <a href="#" className="hover:text-white transition-colors">
-              Privātuma politika
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
-              Sīkdatnes
-            </a>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs">
+            <Link href={`${prefix}/privatuma-politika`} className="hover:text-white transition-colors">
+              {t.privacy}
+            </Link>
+            <Link href={`${prefix}/arstniecibas-noteikumi`} className="hover:text-white transition-colors">
+              {t.treatment}
+            </Link>
+            <Link href={`${prefix}/pacienta-tiesibas-un-pienakumi`} className="hover:text-white transition-colors">
+              {t.patientRights}
+            </Link>
+            <Link href={`${prefix}/privatuma-politika#sikdatnes`} className="hover:text-white transition-colors">
+              {t.cookies}
+            </Link>
           </div>
         </div>
       </div>

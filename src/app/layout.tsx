@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Poiret_One, Inter } from "next/font/google";
 import "./globals.css";
 
 const poiretOne = Poiret_One({
   variable: "--font-heading",
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin", "latin-ext", "cyrillic"],
   weight: "400",
   display: "swap",
 });
 
 const inter = Inter({
   variable: "--font-body",
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin", "latin-ext", "cyrillic"],
   display: "swap",
 });
 
@@ -25,13 +26,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = (await headers()).get("x-pathname") ?? "";
+  const lang = pathname === "/ru" || pathname.startsWith("/ru/") ? "ru" : "lv";
   return (
-    <html lang="lv" className={`${poiretOne.variable} ${inter.variable} antialiased`}>
+    <html lang={lang} className={`${poiretOne.variable} ${inter.variable} antialiased`}>
       <body className="min-h-screen flex flex-col">{children}</body>
     </html>
   );

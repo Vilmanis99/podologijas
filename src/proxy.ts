@@ -18,7 +18,10 @@ export function proxy(request: NextRequest) {
     const pass = decoded.slice(separator + 1);
 
     if (user === USER && pass === PASS) {
-      return NextResponse.next();
+      // Expose the pathname to the root layout so it can set <html lang>.
+      const headers = new Headers(request.headers);
+      headers.set("x-pathname", request.nextUrl.pathname);
+      return NextResponse.next({ request: { headers } });
     }
   }
 
