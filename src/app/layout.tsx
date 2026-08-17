@@ -40,11 +40,6 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
   },
-  robots: {
-    index: false,
-    follow: false,
-    googleBot: { index: false, follow: false },
-  },
 };
 
 export default async function RootLayout({

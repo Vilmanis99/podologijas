@@ -1,16 +1,7 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          { key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" },
-        ],
-      },
-    ];
-  },
-};
+// The site-wide X-Robots-Tag: noindex header that lived here was removed when
+// the site went public.
+const nextConfig: NextConfig = {};
 
 export default nextConfig;
