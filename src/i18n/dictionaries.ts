@@ -62,6 +62,12 @@ const lv = {
     bottomText: "Neesat pārliecināti, kas Jums nepieciešams?",
     bottomCta: "Pieteikties konsultācijai",
     book: "Pieteikties",
+    giftCard: {
+      badge: "Dāvanai",
+      title: "Dāvanu karte",
+      desc: "Dāvanu karti var noformēt par jebkuru summu un izmantot jebkuram mūsu pakalpojumam. Piezvaniet, un sagatavosim to.",
+      phoneLabel: "Zvaniet:",
+    },
     groups: {
       arstnieciska: {
         title: "Ārstnieciskā pēdu aprūpe",
@@ -325,6 +331,12 @@ const ru: typeof lv = {
     "bottomText": "Не уверены, что именно Вам необходимо?",
     "bottomCta": "Записаться на консультацию",
     "book": "Записаться",
+    "giftCard": {
+      "badge": "В подарок",
+      "title": "Подарочная карта",
+      "desc": "Подарочную карту можно оформить на любую сумму и использовать для любой нашей услуги. Позвоните нам, и мы её подготовим.",
+      "phoneLabel": "Звоните:"
+    },
     "groups": {
       "arstnieciska": {
         "title": "Лечебный уход за стопами",

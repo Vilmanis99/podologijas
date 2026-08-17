@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { dict, type Lang } from "@/i18n/dictionaries";
+import { PHONE, PHONE_DISPLAY } from "@/lib/site";
 
 const BOOKING_URL = "https://www.piearsta.lv/";
 
@@ -164,6 +165,47 @@ function ServiceRow({
   );
 }
 
+// Deliberately a note, not a second call to action — the booking button sits
+// right below it, and two equally loud buttons would compete.
+function GiftCard({ lang }: { lang: Lang }) {
+  const t = dict[lang].services.giftCard;
+  return (
+    <div className="mt-10 rounded-2xl bg-secondary-container/40 p-6 sm:p-8">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-5">
+        <div className="w-12 h-12 rounded-xl bg-surface-container-lowest/70 flex items-center justify-center text-primary flex-shrink-0">
+          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+          </svg>
+        </div>
+
+        <div className="flex-1 min-w-0">
+          <p className="text-secondary text-xs font-semibold uppercase tracking-[0.15em] mb-1">
+            {t.badge}
+          </p>
+          <h3 className="font-heading text-xl sm:text-2xl text-primary mb-2">
+            {t.title}
+          </h3>
+          <p className="text-on-surface-variant text-sm leading-relaxed max-w-xl">
+            {t.desc}
+          </p>
+        </div>
+
+        <div className="sm:text-right flex-shrink-0">
+          <p className="text-on-surface-variant text-xs uppercase tracking-[0.1em] mb-1">
+            {t.phoneLabel}
+          </p>
+          <a
+            href={`tel:${PHONE}`}
+            className="text-primary font-semibold hover:underline whitespace-nowrap"
+          >
+            {PHONE_DISPLAY}
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Services({ lang }: { lang: Lang }) {
   const t = dict[lang].services;
   const [openItems, setOpenItems] = useState<Set<string>>(new Set());
@@ -240,6 +282,8 @@ export default function Services({ lang }: { lang: Lang }) {
         <p className="text-on-surface-variant/70 text-xs mt-8 text-center max-w-2xl mx-auto leading-relaxed">
           {t.footnote}
         </p>
+
+        <GiftCard lang={lang} />
 
         {/* Bottom CTA */}
         <div className="mt-12 text-center">
