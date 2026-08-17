@@ -240,6 +240,11 @@ const lv = {
     contactTitle: "Kontakti",
     address: ["TC “Imanta” – K3", "Kurzemes prospekts 3", "Rīga, Imanta"],
     rekvizitiTitle: "Rekvizīti",
+    // Obligāti norādāms reklāmā par veselības aprūpes pakalpojumiem —
+    // MK noteikumu Nr. 60 7. punkts.
+    medCodeLabel: "Ārstniecības iestādes kods",
+    medAddrLabel: "Ārstniecības iestādes adrese",
+    medAddr: "Kurzemes prospekts 3, Rīga, LV-1067",
     companyLabel: "Uzņēmums",
     regLabel: "Reģ. Nr.",
     pvnLabel: "PVN maks. Nr.",
@@ -249,6 +254,8 @@ const lv = {
     swiftLabel: "SWIFT kods",
     bankNameLabel: "Banka",
     bankName: "Luminor Bank AS Latvijas filiāle",
+    accessibility:
+      "Ārstniecības iestāde ir piemērota veselības aprūpes pakalpojumu sniegšanai personām ar funkcionāliem traucējumiem.",
     rights: "Visas tiesības aizsargātas.",
     privacy: "Privātuma politika",
     treatment: "Ārstniecības noteikumi",
@@ -506,6 +513,9 @@ const ru: typeof lv = {
       "Рига, Иманта"
     ],
     "rekvizitiTitle": "Реквизиты",
+    "medCodeLabel": "Код медицинского учреждения",
+    "medAddrLabel": "Адрес медицинского учреждения",
+    "medAddr": "Kurzemes prospekts 3, Rīga, LV-1067",
     "companyLabel": "Компания",
     "regLabel": "Рег. №",
     "pvnLabel": "№ плательщика НДС",
@@ -515,6 +525,8 @@ const ru: typeof lv = {
     "swiftLabel": "Код SWIFT",
     "bankNameLabel": "Банк",
     "bankName": "Luminor Bank AS Latvijas filiāle",
+    "accessibility":
+      "Медицинское учреждение приспособлено для оказания услуг здравоохранения лицам с функциональными нарушениями.",
     "rights": "Все права защищены.",
     "privacy": "Политика конфиденциальности",
     "treatment": "Правила оказания медицинских услуг",

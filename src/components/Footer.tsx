@@ -96,6 +96,14 @@ export default function Footer({ lang }: { lang: Lang }) {
           <h4 className="font-heading text-base text-white mb-4">{t.rekvizitiTitle}</h4>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-2 gap-x-6 text-xs leading-relaxed">
             <div>
+              <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">{t.medCodeLabel}</p>
+              <p>001000454</p>
+            </div>
+            <div>
+              <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">{t.medAddrLabel}</p>
+              <p>{t.medAddr}</p>
+            </div>
+            <div>
               <p className="text-white/50 uppercase tracking-wider text-[0.65rem] mb-1">{t.companyLabel}</p>
               <p>SIA &ldquo;AK Podo&rdquo;</p>
             </div>
@@ -124,6 +132,11 @@ export default function Footer({ lang }: { lang: Lang }) {
               <p>{t.bankName}</p>
             </div>
           </div>
+
+          {/* MK noteikumu Nr. 60 7. punkts — jānorāda līdzās Reģistra kodam. */}
+          <p className="mt-6 text-[0.7rem] leading-relaxed text-white/50 max-w-2xl">
+            {t.accessibility}
+          </p>
         </div>
 
         {/* Bottom */}
