@@ -55,7 +55,7 @@ export default function Hero({ lang }: { lang: Lang }) {
             <div className="aspect-[4/5] md:aspect-[3/4] rounded-tl-[3rem] rounded-tr-xl rounded-bl-xl rounded-br-[3rem] overflow-hidden relative shadow-xl shadow-primary/10">
               <Image
                 src="/images/hero.jpg"
-                alt="Podoloģijas klīnika"
+                alt={t.imageAlt}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"

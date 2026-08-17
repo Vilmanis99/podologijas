@@ -32,6 +32,7 @@ const lv = {
     desc: "Mūsu podoloģijas klīnikā apvienojam medicīnisko precizitāti ar iejūtīgu pieeju, lai katrs Jūsu solis būtu viegls un drošs.",
     ctaBook: "Pieteikties vizītei",
     ctaServices: "Apskatīt pakalpojumus",
+    imageAlt: "Podoloģijas Klīnikas Pārdaugava reģistratūra ar klīnikas logo uz koka sienas",
   },
   about: {
     eyebrow: "Par mums",
@@ -293,7 +294,8 @@ const ru: typeof lv = {
     "titleLine2": "здоровье Ваших стоп",
     "desc": "В нашей подологической клинике мы сочетаем медицинскую точность с чутким подходом, чтобы каждый Ваш шаг был лёгким и уверенным.",
     "ctaBook": "Записаться на приём",
-    "ctaServices": "Посмотреть услуги"
+    "ctaServices": "Посмотреть услуги",
+    "imageAlt": "Ресепшн Подологической клиники Пардаугава с логотипом клиники на деревянной стене"
   },
   "about": {
     "eyebrow": "О нас",
