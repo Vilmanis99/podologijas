@@ -9,11 +9,13 @@ import Vakances from "@/components/Vakances";
 import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
 import PromoStrip from "@/components/PromoStrip";
+import StructuredData from "@/components/StructuredData";
 import type { Lang } from "@/i18n/dictionaries";
 
 export default function SiteHome({ lang }: { lang: Lang }) {
   return (
     <>
+      <StructuredData lang={lang} />
       <div className="md:fixed md:top-0 md:left-0 md:right-0 md:z-50">
         <PromoStrip lang={lang} />
         <Header lang={lang} />
