@@ -44,7 +44,7 @@ export default function About({ lang }: { lang: Lang }) {
             <div className="aspect-[4/5] rounded-tl-[2rem] rounded-tr-xl rounded-bl-xl rounded-br-[2rem] overflow-hidden relative">
               <Image
                 src="/images/about-clinic.jpg"
-                alt="Podoloģijas Klīnika Pārdaugava"
+                alt={t.imageAlt}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"

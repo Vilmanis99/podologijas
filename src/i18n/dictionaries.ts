@@ -32,7 +32,7 @@ const lv = {
     desc: "Mūsu podoloģijas klīnikā apvienojam medicīnisko precizitāti ar iejūtīgu pieeju, lai katrs Jūsu solis būtu viegls un drošs.",
     ctaBook: "Pieteikties vizītei",
     ctaServices: "Apskatīt pakalpojumus",
-    imageAlt: "Podoloģijas Klīnikas Pārdaugava reģistratūra ar klīnikas logo uz koka sienas",
+    imageAlt: "Podoloģijas procedūru galdiņš ar pēdu aprūpes līdzekļiem un aparātu",
   },
   about: {
     eyebrow: "Par mums",
@@ -42,6 +42,7 @@ const lv = {
     p2: "Neatkarīgi no tā, vai Jums nepieciešama profilaktiska aprūpe vai specifiska ārstēšana, mēs esam šeit, lai palīdzētu Jums spert katru soli ar pārliecību.",
     acuteTitle: "Pieņemam akūti",
     acuteSub: "Sazinieties ar mums — palīdzēsim arī steidzamos gadījumos",
+    imageAlt: "Podoloģijas Klīnikas Pārdaugava reģistratūra ar klīnikas logo uz koka sienas",
   },
   promoBanner: {
     badge: "Akcija senioriem",
@@ -295,7 +296,7 @@ const ru: typeof lv = {
     "desc": "В нашей подологической клинике мы сочетаем медицинскую точность с чутким подходом, чтобы каждый Ваш шаг был лёгким и уверенным.",
     "ctaBook": "Записаться на приём",
     "ctaServices": "Посмотреть услуги",
-    "imageAlt": "Ресепшн Подологической клиники Пардаугава с логотипом клиники на деревянной стене"
+    "imageAlt": "Процедурный столик со средствами для ухода за стопами и аппаратом"
   },
   "about": {
     "eyebrow": "О нас",
@@ -304,7 +305,8 @@ const ru: typeof lv = {
     "p1": "В нашей клинике работают сертифицированные специалисты-подологи с опытом ухода за стопами. Мы применяем современные технологии и индивидуальный подход к каждому пациенту.",
     "p2": "Независимо от того, нужен ли Вам профилактический уход или специфическое лечение, мы здесь, чтобы помочь Вам делать каждый шаг уверенно.",
     "acuteTitle": "Принимаем срочно",
-    "acuteSub": "Свяжитесь с нами — поможем и в неотложных случаях"
+    "acuteSub": "Свяжитесь с нами — поможем и в неотложных случаях",
+    "imageAlt": "Ресепшн Подологической клиники Пардаугава с логотипом клиники на деревянной стене"
   },
   "promoBanner": {
     "badge": "Акция для пожилых",
