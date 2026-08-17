@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { Poiret_One, Inter } from "next/font/google";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const poiretOne = Poiret_One({
@@ -16,9 +17,29 @@ const inter = Inter({
   display: "swap",
 });
 
+const TITLE = "Podoloģijas Klīnika Pārdaugava | podologijasklinika.lv";
+const DESCRIPTION =
+  "Profesionāla pēdu veselības aprūpe Pārdaugavā. Podoloģija, medicīniskā pedikīra, nagu korekcija. Piesakieties vizītei online.";
+
 export const metadata: Metadata = {
-  title: "Podoloģijas Klīnika Pārdaugava | podologijasklinika.lv",
-  description: "Profesionāla pēdu veselības aprūpe Pārdaugavā. Podoloģija, medicīniskā pedikīra, nagu korekcija. Piesakieties vizītei online.",
+  // Required for canonical/hreflang and OG image URLs to resolve as absolute.
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    type: "website",
+    siteName: "Podoloģijas Klīnika Pārdaugava",
+    locale: "lv_LV",
+    alternateLocale: "ru_RU",
+    url: "/",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
   robots: {
     index: false,
     follow: false,
