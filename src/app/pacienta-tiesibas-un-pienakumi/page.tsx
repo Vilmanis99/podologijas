@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   title: "Pacienta tiesības un pienākumi | Podoloģijas Klīnika Pārdaugava",
   description:
     "Podoloģijas Klīnika Pārdaugava — pacienta tiesības un pienākumi, informētā piekrišana, vizītes atcelšanas kārtība.",
+  alternates: {
+    canonical: "/pacienta-tiesibas-un-pienakumi",
+    languages: { lv: "/pacienta-tiesibas-un-pienakumi", ru: "/ru/pacienta-tiesibas-un-pienakumi" },
+  },
 };
 
 const UPDATED = "2026. gada 13. jūlijs";

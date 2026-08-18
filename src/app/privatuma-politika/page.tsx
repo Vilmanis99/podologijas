@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   title: "Privātuma politika | Podoloģijas Klīnika Pārdaugava",
   description:
     "Podoloģijas Klīnika Pārdaugava (SIA “AK Podo”) privātuma politika un informācija par personas datu apstrādi saskaņā ar VDAR.",
+  alternates: {
+    canonical: "/privatuma-politika",
+    languages: { lv: "/privatuma-politika", ru: "/ru/privatuma-politika" },
+  },
 };
 
 const UPDATED = "2026. gada 13. jūlijs";

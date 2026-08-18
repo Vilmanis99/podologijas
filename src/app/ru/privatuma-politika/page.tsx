@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   title: "Политика конфиденциальности | Подологическая клиника Пардаугава",
   description:
     "Политика конфиденциальности Подологической клиники Пардаугава (SIA «AK Podo») и информация об обработке персональных данных в соответствии с GDPR.",
+  alternates: {
+    canonical: "/ru/privatuma-politika",
+    languages: { lv: "/privatuma-politika", ru: "/ru/privatuma-politika" },
+  },
 };
 
 const UPDATED = "13 июля 2026 года";

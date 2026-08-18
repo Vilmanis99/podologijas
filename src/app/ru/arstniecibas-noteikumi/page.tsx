@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   title: "Положение о медицинском учреждении | Подологическая клиника Пардаугава",
   description:
     "Положение о медицинском учреждении Подологической клиники Пардаугава (SIA «AK Podo») — правовые основы деятельности, задачи, порядок приёма пациентов и обеспечение качества.",
+  alternates: {
+    canonical: "/ru/arstniecibas-noteikumi",
+    languages: { lv: "/arstniecibas-noteikumi", ru: "/ru/arstniecibas-noteikumi" },
+  },
 };
 
 const UPDATED = "13 июля 2026 года";

@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   title: "Ārstniecības iestādes nolikums | Podoloģijas Klīnika Pārdaugava",
   description:
     "Podoloģijas Klīnika Pārdaugava (SIA “AK Podo”) ārstniecības iestādes nolikums — darbības tiesiskais pamats, uzdevumi, pacientu uzņemšanas kārtība un kvalitātes nodrošināšana.",
+  alternates: {
+    canonical: "/arstniecibas-noteikumi",
+    languages: { lv: "/arstniecibas-noteikumi", ru: "/ru/arstniecibas-noteikumi" },
+  },
 };
 
 const UPDATED = "2026. gada 13. jūlijs";

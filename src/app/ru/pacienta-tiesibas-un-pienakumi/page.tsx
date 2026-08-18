@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   title: "Права и обязанности пациента | Подологическая клиника Пардаугава",
   description:
     "Подологическая клиника Пардаугава — права и обязанности пациента, информированное согласие, порядок отмены визита.",
+  alternates: {
+    canonical: "/ru/pacienta-tiesibas-un-pienakumi",
+    languages: { lv: "/pacienta-tiesibas-un-pienakumi", ru: "/ru/pacienta-tiesibas-un-pienakumi" },
+  },
 };
 
 const UPDATED = "13 июля 2026 года";
