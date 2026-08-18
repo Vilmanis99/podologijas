@@ -24,6 +24,9 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   // Required for canonical/hreflang and OG image URLs to resolve as absolute.
   metadataBase: new URL(SITE_URL),
+  // Proves ownership to Google Search Console. The DNS TXT method was not an
+  // option: the zone lives at Sigmanet, which we do not control.
+  verification: { google: "hnSwVofQOysNqU6WoIc2_C3EBbVUAMYUXtgx7YwNM_Y" },
   title: TITLE,
   description: DESCRIPTION,
   openGraph: {
