@@ -3,14 +3,15 @@ import { dict, type Lang } from "@/i18n/dictionaries";
 
 const BOOKING_URL = "https://www.piearsta.lv/";
 
-type PersonKey = "anete" | "kristine" | "ieva" | "lasma" | "alona";
+type PersonKey = "anete" | "kristine" | "ieva" | "lasma" | "alona" | "roberts";
 
-const people: { name: string; image: string; key: PersonKey; role: "roleP" | "roleM" }[] = [
+const people: { name: string; image: string; key: PersonKey; role: "roleP" | "roleM" | "roleT" }[] = [
   { name: "Anete Kuhta", image: "/images/specialist-anete.jpg", key: "anete", role: "roleP" },
   { name: "Kristīne Ozola", image: "/images/specialist-kristine.jpg", key: "kristine", role: "roleP" },
   { name: "Ieva Govša", image: "/images/specialist-ieva.jpg", key: "ieva", role: "roleP" },
   { name: "Lāsma Luksa", image: "/images/specialist-lasma.jpg", key: "lasma", role: "roleP" },
   { name: "Aļona Stambrovska", image: "/images/specialist-alona.jpg", key: "alona", role: "roleM" },
+  { name: "Roberts Hrapunovs", image: "/images/specialist-roberts.jpg", key: "roberts", role: "roleT" },
 ];
 
 export default function Specialists({ lang }: { lang: Lang }) {
@@ -27,7 +28,7 @@ export default function Specialists({ lang }: { lang: Lang }) {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {people.map((person) => (
             <div key={person.name} className="group flex flex-col h-full">
               {/* Photo — asymmetric rounding per design.md */}
@@ -36,7 +37,7 @@ export default function Specialists({ lang }: { lang: Lang }) {
                   src={person.image}
                   alt={person.name}
                   fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   className="object-cover group-hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>
