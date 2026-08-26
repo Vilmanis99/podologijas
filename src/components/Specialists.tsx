@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { dict, type Lang } from "@/i18n/dictionaries";
-
-const BOOKING_URL = "https://www.piearsta.lv/";
+import { BOOKING_URL } from "@/lib/site";
 
 type PersonKey = "anete" | "kristine" | "ieva" | "lasma" | "alona" | "roberts";
 

@@ -2,9 +2,7 @@
 
 import { useState } from "react";
 import { dict, type Lang } from "@/i18n/dictionaries";
-import { PHONE, PHONE_DISPLAY } from "@/lib/site";
-
-const BOOKING_URL = "https://www.piearsta.lv/";
+import { BOOKING_URL, PHONE, PHONE_DISPLAY } from "@/lib/site";
 
 type GroupKey = keyof (typeof dict)["lv"]["services"]["groups"];
 

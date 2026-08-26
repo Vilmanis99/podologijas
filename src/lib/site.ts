@@ -2,6 +2,11 @@
 // and OG image URLs resolve to absolute URLs) and as the sitemap's base.
 export const SITE_URL = "https://podologijasklinika.lv";
 
+// Booking page on piearsta.lv. There is no Russian variant — /ru/ redirects
+// back to /lv/ — so both language versions of the site point here.
+export const BOOKING_URL =
+  "https://www.piearsta.lv/lv/iestazu-katalogs/podologijas-klinika-pardaugava-1830/";
+
 // The clinic's phone, in dialling and display form. Older components still
 // carry their own copies; new code should use these.
 export const PHONE = "+37125455994";

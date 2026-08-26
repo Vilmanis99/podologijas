@@ -1,6 +1,5 @@
 import { dict, type Lang } from "@/i18n/dictionaries";
-
-const BOOKING_URL = "https://www.piearsta.lv/";
+import { BOOKING_URL } from "@/lib/site";
 
 export default function PromoBanner({ lang }: { lang: Lang }) {
   const t = dict[lang].promoBanner;

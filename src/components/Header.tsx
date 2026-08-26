@@ -5,8 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { dict, type Lang } from "@/i18n/dictionaries";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { BOOKING_URL } from "@/lib/site";
 
-const BOOKING_URL = "https://www.piearsta.lv/";
 const PHONE = "+37125455994";
 const PHONE_DISPLAY = "+371 25 455 994";
 
