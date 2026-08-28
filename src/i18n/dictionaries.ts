@@ -79,7 +79,7 @@ const lv = {
           },
           atkartota: {
             name: "Atkārtota ārstnieciskā pēdu aprūpe",
-            desc: "Profesionāla pēdu kopšana ar medicīniskiem instrumentiem, ādas un nagu apstrāde.",
+            desc: "Profesionāla pēdu kopšana, ādas un nagu apstrāde.",
           },
           konsultacija: {
             name: "Konsultācija un problēmzonas apstrāde",
@@ -365,7 +365,7 @@ const ru: typeof lv = {
           },
           "atkartota": {
             "name": "Повторный лечебный уход за стопами",
-            "desc": "Профессиональный уход за стопами медицинскими инструментами, обработка кожи и ногтей."
+            "desc": "Профессиональный уход за стопами, обработка кожи и ногтей."
           },
           "konsultacija": {
             "name": "Консультация и обработка проблемной зоны",
