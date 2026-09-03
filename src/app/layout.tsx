@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { Poiret_One, Inter } from "next/font/google";
+import ConversionTracking from "@/components/ConversionTracking";
+import CookieConsent from "@/components/CookieConsent";
+import { CONSENT_DEFAULT_SNIPPET } from "@/lib/ads";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -54,7 +57,15 @@ export default async function RootLayout({
   const lang = pathname === "/ru" || pathname.startsWith("/ru/") ? "ru" : "lv";
   return (
     <html lang={lang} className={`${poiretOne.variable} ${inter.variable} antialiased`}>
-      <body className="min-h-screen flex flex-col">{children}</body>
+      <head>
+        {/* Must run before gtag.js, so it is inline rather than next/script. */}
+        <script dangerouslySetInnerHTML={{ __html: CONSENT_DEFAULT_SNIPPET }} />
+      </head>
+      <body className="min-h-screen flex flex-col">
+        {children}
+        <ConversionTracking />
+        <CookieConsent lang={lang} />
+      </body>
     </html>
   );
 }

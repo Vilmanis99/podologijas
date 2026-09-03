@@ -287,6 +287,13 @@ const lv = {
     patientRights: "Pacienta tiesības",
     cookies: "Sīkdatnes",
   },
+  cookieConsent: {
+    title: "Sīkdatnes",
+    text: "Izmantojam sīkdatnes, lai novērtētu reklāmas efektivitāti. Tās tiek ieslēgtas tikai ar Jūsu piekrišanu — bez tās mājaslapa darbojas pilnībā.",
+    accept: "Piekrītu",
+    reject: "Nepiekrītu",
+    more: "Privātuma politika",
+  },
   langSwitch: {
     label: "Valoda",
   },
@@ -581,6 +588,13 @@ const ru: typeof lv = {
     "treatment": "Правила оказания медицинских услуг",
     "patientRights": "Права пациента",
     "cookies": "Файлы cookie"
+  },
+  "cookieConsent": {
+    "title": "Файлы cookie",
+    "text": "Мы используем файлы cookie, чтобы оценивать эффективность рекламы. Они включаются только с Вашего согласия — без него сайт работает полностью.",
+    "accept": "Согласен",
+    "reject": "Не согласен",
+    "more": "Политика конфиденциальности"
   },
   "langSwitch": {
     "label": "Язык"
