@@ -1,6 +1,7 @@
-// Google Ads tag for the clinic's account. The two send_to values are opaque
-// conversion labels issued by Google and must be sent exactly as given.
+// Google Ads and GA4 tags for the clinic's account. The two send_to values are
+// opaque conversion labels issued by Google and must be sent exactly as given.
 export const AW_ID = "AW-18395492498";
+export const GA_ID = "G-13M2TCJFFB";
 export const PHONE_SEND_TO = "AW-18395492498/FBTlCLPkku0cEJLh08NE";
 export const BOOK_SEND_TO = "AW-18395492498/Uy9NCLbkku0cEJLh08NE";
 
@@ -62,4 +63,5 @@ try {
 } catch (e) {}
 gtag('js', new Date());
 gtag('config', '${AW_ID}');
+gtag('config', '${GA_ID}');
 `;
