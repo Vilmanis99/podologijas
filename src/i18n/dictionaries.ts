@@ -214,9 +214,9 @@ const lv = {
       kristine: "Klīnikas vadītāja un sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē, estētiskajā pēdu aprūpē un roku ārstnieciskajā aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
       ieva: "Sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē un roku ārstnieciskajā aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
       lasma: "Sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē un estētiskajā pēdu aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
-      alona: "Manikīra un pedikīra speciāliste ar profesionālu pieeju katram pacientam. Specializējas estētiskajā pēdu un roku aprūpē.",
+      alona: "Manikīra un pedikīra speciāliste ar profesionālu pieeju katram klientam. Specializējas estētiskajā pēdu un roku aprūpē.",
       roberts:
-        "Tehniskais ortopēds ar profesionālu pieeju katram pacientam. Specializējas pēdu un gaitas traucējumu diagnostikā un korekcijā, ortopēdisko un sensomotoro zolīšu izgatavošanā (CAD-CAM, 3D tehnoloģijas), plantārā fascīta, papēža piešu, Ahillotendinīta un pēdu deformāciju ārstēšanā, ortožu un tehnisko palīglīdzekļu pielāgošanā, kā arī ekstremitāšu protēžu izgatavošanā un pielāgošanā. Konsultē pieaugušos un bērnus no 1 gada vecuma.",
+        "Tehniskais ortopēds ar profesionālu pieeju katram pacientam. Specializējas pēdu un gaitas traucējumu diagnostikā un korekcijā, ortopēdisko un sensomotoro zolīšu izgatavošanā (CAD-CAM, 3D tehnoloģijas), plantārā fascīta, papēža piešu, ahillotendinīta un pēdu deformāciju ārstēšanā, ortožu un tehnisko palīglīdzekļu pielāgošanā, kā arī ekstremitāšu protēžu izgatavošanā un pielāgošanā. Konsultē pieaugušos un bērnus no 1 gada vecuma.",
     },
   },
   vakances: {
@@ -229,7 +229,7 @@ const lv = {
     offerTitle: "Ko mēs piedāvājam",
     perks: [
       "Konkurētspējīgu atalgojumu",
-      "Modernu darba vidi un instrumentāriju",
+      "Modernu darba vidi",
       "Stabilu pacientu plūsmu",
       "Apmācības un kvalifikācijas paaugstināšanu",
       "Draudzīgu, atbalstošu komandu",
@@ -239,7 +239,7 @@ const lv = {
     eyebrow: "Kontakti",
     title: "Sazinieties ar mums",
     addressLabel: "Adrese",
-    address: ["TC “Imanta” – K3", "Kurzemes prospekts 3", "Rīga, Imanta"],
+    address: ["TC “Imanta”", "Kurzemes prospekts 3", "Rīga, Imanta"],
     phoneLabel: "Tālrunis",
     emailLabel: "E-pasts",
     hoursLabel: "Darba laiks",
@@ -263,7 +263,7 @@ const lv = {
     tagline: "Profesionāla podoloģijas klīnika Pārdaugavā. Rūpējamies par Jūsu pēdu veselību ar mūsdienīgām metodēm un individuālu pieeju.",
     navTitle: "Navigācija",
     contactTitle: "Kontakti",
-    address: ["TC “Imanta” – K3", "Kurzemes prospekts 3", "Rīga, Imanta"],
+    address: ["TC “Imanta”", "Kurzemes prospekts 3", "Rīga, Imanta"],
     rekvizitiTitle: "Rekvizīti",
     // Obligāti norādāms reklāmā par veselības aprūpes pakalpojumiem —
     // MK noteikumu Nr. 60 7. punkts.
@@ -521,7 +521,7 @@ const ru: typeof lv = {
     "offerTitle": "Что мы предлагаем",
     "perks": [
       "Конкурентоспособную оплату труда",
-      "Современную рабочую среду и инструментарий",
+      "Современную рабочую среду",
       "Стабильный поток пациентов",
       "Обучение и повышение квалификации",
       "Дружную, поддерживающую команду"
@@ -532,7 +532,7 @@ const ru: typeof lv = {
     "title": "Свяжитесь с нами",
     "addressLabel": "Адрес",
     "address": [
-      "ТЦ «Imanta» – K3",
+      "ТЦ «Imanta»",
       "Kurzemes prospekts 3",
       "Рига, Иманта"
     ],
@@ -564,7 +564,7 @@ const ru: typeof lv = {
     "navTitle": "Навигация",
     "contactTitle": "Контакты",
     "address": [
-      "ТЦ «Imanta» – K3",
+      "ТЦ «Imanta»",
       "Kurzemes prospekts 3",
       "Рига, Иманта"
     ],

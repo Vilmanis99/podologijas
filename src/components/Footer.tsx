@@ -142,7 +142,7 @@ export default function Footer({ lang }: { lang: Lang }) {
         {/* Bottom */}
         <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs">
-            © {new Date().getFullYear()} Podoloģijas Klīnika Pārdaugava. {t.rights}
+            © {new Date().getFullYear()} Podoloģijas klīnika Pārdaugava. {t.rights}
           </p>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs">
             <Link href={`${prefix}/privatuma-politika`} className="hover:text-white transition-colors">
