@@ -81,6 +81,10 @@ const lv = {
             name: "Atkārtota ārstnieciskā pēdu aprūpe",
             desc: "Profesionāla pēdu kopšana, ādas un nagu apstrāde.",
           },
+          diabets: {
+            name: "Cukura diabēta pēdas aprūpe (ar nosūtījumu)",
+            desc: "Pēdu aprūpe cukura diabēta pacientiem ar nosūtījumu.",
+          },
           konsultacija: {
             name: "Konsultācija un problēmzonas apstrāde",
             desc: "Pēdu stāvokļa novērtējums, diagnostika un mērķtiecīga problēmzonas apstrāde.",
@@ -199,7 +203,7 @@ const lv = {
       "ikvienam, kam apgrūtināta patstāvīga pārvietošanās",
     ],
     priceLabel: "Vizītes cena",
-    price: "65 €",
+    price: "70 €",
     cta: "Zvaniet un pieteikieties",
   },
   specialists: {
@@ -213,7 +217,6 @@ const lv = {
       anete: "Klīnikas vadītāja un sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
       kristine: "Klīnikas vadītāja un sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē, estētiskajā pēdu aprūpē un roku ārstnieciskajā aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
       ieva: "Sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē un roku ārstnieciskajā aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
-      lasma: "Sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē un estētiskajā pēdu aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
       alona: "Manikīra un pedikīra speciāliste ar profesionālu pieeju katram klientam. Specializējas estētiskajā pēdu un roku aprūpē.",
       roberts:
         "Tehniskais ortopēds ar profesionālu pieeju katram pacientam. Specializējas pēdu un gaitas traucējumu diagnostikā un korekcijā, ortopēdisko un sensomotoro zolīšu izgatavošanā (CAD-CAM, 3D tehnoloģijas), plantārā fascīta, papēža piešu, ahillotendinīta un pēdu deformāciju ārstēšanā, ortožu un tehnisko palīglīdzekļu pielāgošanā, kā arī ekstremitāšu protēžu izgatavošanā un pielāgošanā. Konsultē pieaugušos un bērnus no 1 gada vecuma.",
@@ -243,7 +246,7 @@ const lv = {
     phoneLabel: "Tālrunis",
     emailLabel: "E-pasts",
     hoursLabel: "Darba laiks",
-    hours: ["P. – Pk. 9:00 – 19:00", "Sestd. 10:00 – 17:00", "Svētd. — slēgts"],
+    hours: ["P. – Pk. 9:00 – 19:00", "Sestd. 10:00 – 15:00", "Svētd. — slēgts"],
     transportLabel: "Sabiedriskais transports",
     stopsLabel: "Pieturas:",
     stops: "“Progresa iela”, “Kurzemes prospekts”, “Dammes iela”, “Observatorijas iela”, “Jūrmalas gatve”",
@@ -374,6 +377,10 @@ const ru: typeof lv = {
             "name": "Повторный лечебный уход за стопами",
             "desc": "Профессиональный уход за стопами, обработка кожи и ногтей."
           },
+          "diabets": {
+            "name": "Уход за стопами при сахарном диабете (по направлению)",
+            "desc": "Уход за стопами для пациентов с сахарным диабетом по направлению."
+          },
           "konsultacija": {
             "name": "Консультация и обработка проблемной зоны",
             "desc": "Оценка состояния стоп, диагностика и целенаправленная обработка проблемной зоны."
@@ -492,7 +499,7 @@ const ru: typeof lv = {
       "всем, кому трудно передвигаться самостоятельно"
     ],
     "priceLabel": "Стоимость визита",
-    "price": "65 €",
+    "price": "70 €",
     "cta": "Звоните и записывайтесь"
   },
   "specialists": {
@@ -506,7 +513,6 @@ const ru: typeof lv = {
       "anete": "Руководитель клиники и сертифицированный подолог с профессиональным подходом к каждому пациенту. Специализируется на лечебном уходе за стопами и ногтями. Постоянно повышает квалификацию на профессиональных курсах.",
       "kristine": "Руководитель клиники и сертифицированный подолог с профессиональным подходом к каждому пациенту. Специализируется на лечебном уходе за стопами и ногтями, эстетическом уходе за стопами и лечебном уходе за руками. Постоянно повышает квалификацию на профессиональных курсах.",
       "ieva": "Сертифицированный подолог с профессиональным подходом к каждому пациенту. Специализируется на лечебном уходе за стопами и ногтями и лечебном уходе за руками. Постоянно повышает квалификацию на профессиональных курсах.",
-      "lasma": "Сертифицированный подолог с профессиональным подходом к каждому пациенту. Специализируется на лечебном уходе за стопами и ногтями и эстетическом уходе за стопами. Постоянно повышает квалификацию на профессиональных курсах.",
       "alona": "Специалист по маникюру и педикюру с профессиональным подходом к каждому пациенту. Специализируется на эстетическом уходе за стопами и руками.",
       "roberts": "Технический ортопед с профессиональным подходом к каждому пациенту. Специализируется на диагностике и коррекции нарушений стоп и походки, изготовлении ортопедических и сенсомоторных стелек (CAD-CAM, 3D-технологии), лечении плантарного фасциита, пяточной шпоры, ахиллотендинита и деформаций стоп, подборе ортезов и технических вспомогательных средств, а также изготовлении и подгонке протезов конечностей. Консультирует взрослых и детей с 1 года."
     }
@@ -541,7 +547,7 @@ const ru: typeof lv = {
     "hoursLabel": "Время работы",
     "hours": [
       "Пн. – Пт. 9:00 – 19:00",
-      "Сб. 10:00 – 17:00",
+      "Сб. 10:00 – 15:00",
       "Вс. — закрыто"
     ],
     "transportLabel": "Общественный транспорт",

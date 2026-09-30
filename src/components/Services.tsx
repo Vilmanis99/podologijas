@@ -54,6 +54,7 @@ const groupDefs: GroupDef[] = [
     services: [
       { key: "pirmreizeja", price: "55 €" },
       { key: "atkartota", price: "50 €" },
+      { key: "diabets", price: "30 €" },
       { key: "konsultacija", price: "35 €" },
       { key: "akuts", price: "40 €" },
     ],

@@ -52,7 +52,7 @@ export default function StructuredData({ lang }: { lang: Lang }) {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: "Saturday",
         opens: "10:00",
-        closes: "17:00",
+        closes: "15:00",
       },
     ],
     parentOrganization: {

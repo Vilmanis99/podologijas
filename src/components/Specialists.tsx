@@ -2,13 +2,12 @@ import Image from "next/image";
 import { dict, type Lang } from "@/i18n/dictionaries";
 import { BOOKING_URL } from "@/lib/site";
 
-type PersonKey = "anete" | "kristine" | "ieva" | "lasma" | "alona" | "roberts";
+type PersonKey = "anete" | "kristine" | "ieva" | "alona" | "roberts";
 
 const people: { name: string; image: string; key: PersonKey; role: "roleP" | "roleM" | "roleT" }[] = [
   { name: "Anete Kuhta", image: "/images/specialist-anete.jpg", key: "anete", role: "roleP" },
   { name: "Kristīne Ozola", image: "/images/specialist-kristine.jpg", key: "kristine", role: "roleP" },
   { name: "Ieva Govša", image: "/images/specialist-ieva.jpg", key: "ieva", role: "roleP" },
-  { name: "Lāsma Luksa", image: "/images/specialist-lasma.jpg", key: "lasma", role: "roleP" },
   { name: "Aļona Stambrovska", image: "/images/specialist-alona.jpg", key: "alona", role: "roleM" },
   { name: "Roberts Hrapunovs", image: "/images/specialist-roberts.jpg", key: "roberts", role: "roleT" },
 ];
