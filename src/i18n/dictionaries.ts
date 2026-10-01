@@ -217,6 +217,7 @@ const lv = {
       anete: "Klīnikas vadītāja un sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
       kristine: "Klīnikas vadītāja un sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē, estētiskajā pēdu aprūpē un roku ārstnieciskajā aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
       ieva: "Sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē un roku ārstnieciskajā aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
+      jelizaveta: "Sertificēta podoloģe ar profesionālu pieeju katram pacientam. Specializējas ārstnieciskajā pēdu un nagu aprūpē. Pastāvīgi papildina zināšanas profesionālos kursos.",
       alona: "Manikīra un pedikīra speciāliste ar profesionālu pieeju katram klientam. Specializējas estētiskajā pēdu un roku aprūpē.",
       roberts:
         "Tehniskais ortopēds ar profesionālu pieeju katram pacientam. Specializējas pēdu un gaitas traucējumu diagnostikā un korekcijā, ortopēdisko un sensomotoro zolīšu izgatavošanā (CAD-CAM, 3D tehnoloģijas), plantārā fascīta, papēža piešu, ahillotendinīta un pēdu deformāciju ārstēšanā, ortožu un tehnisko palīglīdzekļu pielāgošanā, kā arī ekstremitāšu protēžu izgatavošanā un pielāgošanā. Konsultē pieaugušos un bērnus no 1 gada vecuma.",
@@ -513,6 +514,7 @@ const ru: typeof lv = {
       "anete": "Руководитель клиники и сертифицированный подолог с профессиональным подходом к каждому пациенту. Специализируется на лечебном уходе за стопами и ногтями. Постоянно повышает квалификацию на профессиональных курсах.",
       "kristine": "Руководитель клиники и сертифицированный подолог с профессиональным подходом к каждому пациенту. Специализируется на лечебном уходе за стопами и ногтями, эстетическом уходе за стопами и лечебном уходе за руками. Постоянно повышает квалификацию на профессиональных курсах.",
       "ieva": "Сертифицированный подолог с профессиональным подходом к каждому пациенту. Специализируется на лечебном уходе за стопами и ногтями и лечебном уходе за руками. Постоянно повышает квалификацию на профессиональных курсах.",
+      "jelizaveta": "Сертифицированный подолог с профессиональным подходом к каждому пациенту. Специализируется на лечебном уходе за стопами и ногтями. Постоянно повышает квалификацию на профессиональных курсах.",
       "alona": "Специалист по маникюру и педикюру с профессиональным подходом к каждому пациенту. Специализируется на эстетическом уходе за стопами и руками.",
       "roberts": "Технический ортопед с профессиональным подходом к каждому пациенту. Специализируется на диагностике и коррекции нарушений стоп и походки, изготовлении ортопедических и сенсомоторных стелек (CAD-CAM, 3D-технологии), лечении плантарного фасциита, пяточной шпоры, ахиллотендинита и деформаций стоп, подборе ортезов и технических вспомогательных средств, а также изготовлении и подгонке протезов конечностей. Консультирует взрослых и детей с 1 года."
     }
