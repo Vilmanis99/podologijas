@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { dict, type Lang } from "@/i18n/dictionaries";
-import { BOOKING_URL } from "@/lib/site";
+import BookingLink from "@/components/BookingLink";
 
 type PersonKey = "anete" | "kristine" | "ieva" | "jelizaveta" | "alona";
 
@@ -52,14 +52,12 @@ export default function Specialists({ lang }: { lang: Lang }) {
               </p>
 
               {/* CTA */}
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <BookingLink
+                lang={lang}
                 className="self-start mt-5 bg-surface-container-highest text-primary text-xs font-semibold uppercase tracking-[0.05em] px-5 py-2.5 rounded-xl hover:scale-[1.02] transition-transform duration-200"
               >
                 {t.book}
-              </a>
+              </BookingLink>
             </div>
           ))}
         </div>

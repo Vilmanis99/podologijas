@@ -1,5 +1,5 @@
 import { dict, type Lang } from "@/i18n/dictionaries";
-import { BOOKING_URL } from "@/lib/site";
+import BookingLink from "@/components/BookingLink";
 
 export default function PromoBanner({ lang }: { lang: Lang }) {
   const t = dict[lang].promoBanner;
@@ -29,17 +29,15 @@ export default function PromoBanner({ lang }: { lang: Lang }) {
             </div>
 
             <div className="flex flex-col gap-3 md:items-end">
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <BookingLink
+                lang={lang}
                 className="inline-flex items-center justify-center gap-2 bg-secondary-container text-primary text-sm font-semibold uppercase tracking-[0.05em] px-7 py-4 rounded-xl hover:scale-[1.02] transition-transform duration-200 shadow-lg shadow-black/10"
               >
                 {t.cta}
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
-              </a>
+              </BookingLink>
               <a
                 href="tel:+37125455994"
                 className="text-white/70 hover:text-white text-sm transition-colors text-center md:text-right"

@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { dict, type Lang } from "@/i18n/dictionaries";
-import { BOOKING_URL, PHONE, PHONE_DISPLAY } from "@/lib/site";
+import { PHONE, PHONE_DISPLAY } from "@/lib/site";
+import BookingLink from "@/components/BookingLink";
 
 type GroupKey = keyof (typeof dict)["lv"]["services"]["groups"];
 
@@ -106,6 +107,7 @@ const groupDefs: GroupDef[] = [
 ];
 
 function ServiceRow({
+  lang,
   name,
   price,
   description,
@@ -113,6 +115,7 @@ function ServiceRow({
   isOpen,
   onToggle,
 }: {
+  lang: Lang;
   name: string;
   price: string;
   description?: string;
@@ -162,14 +165,12 @@ function ServiceRow({
                 {description}
               </p>
             )}
-            <a
-              href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <BookingLink
+              lang={lang}
               className="inline-flex items-center justify-center bg-primary text-white text-xs font-semibold uppercase tracking-[0.05em] px-5 py-2.5 rounded-lg hover:scale-[1.02] transition-transform duration-200 flex-shrink-0 w-full sm:w-auto"
             >
               {bookLabel}
-            </a>
+            </BookingLink>
           </div>
         </div>
       </div>
@@ -275,6 +276,7 @@ export default function Services({ lang }: { lang: Lang }) {
                     return (
                       <ServiceRow
                         key={key}
+                        lang={lang}
                         name={s.name}
                         price={svc.price}
                         description={s.desc}
@@ -302,17 +304,15 @@ export default function Services({ lang }: { lang: Lang }) {
           <p className="text-on-surface-variant text-sm mb-4">
             {t.bottomText}
           </p>
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <BookingLink
+            lang={lang}
             className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary-container text-white text-sm font-semibold uppercase tracking-[0.05em] px-8 py-4 rounded-xl hover:scale-[1.02] transition-transform duration-200"
           >
             {t.bottomCta}
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>
-          </a>
+          </BookingLink>
         </div>
       </div>
     </section>

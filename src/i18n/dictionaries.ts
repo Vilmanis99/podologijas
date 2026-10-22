@@ -6,6 +6,19 @@ export type Lang = "lv" | "ru";
 export const LANGS: Lang[] = ["lv", "ru"];
 
 const lv = {
+  booking: {
+    call: "Zvanīt un pieteikties",
+    callShort: "Zvanīt",
+  },
+  bookingNotice: {
+    title: "Tiešsaistes pieraksts īslaicīgi nav pieejams",
+    message: "Lai pieteiktos vizītei, lūdzam zvanīt uz klīnikas reģistratūru.",
+    detailsLabel: "Kāpēc pieraksts nav pieejams?",
+    reason: "Saistībā ar pasaulē atklātajām kritiskajām PHP drošības ievainojamībām profilaktiski ierobežota ārējo integrāciju servisu pieejamība. Šie piesardzības pasākumi ietekmē arī tiešsaistes pierakstu.",
+    restoration: "Gaidām, kad pakalpojuma sniedzējs ieviesīs un pārbaudīs nepieciešamos drošības atjauninājumus. Pēc tam tiešsaistes pieraksta darbība tiks atjaunota.",
+    thanks: "Pasākumi tiek veikti pacientu datu aizsardzībai. Atvainojamies par neērtībām un pateicamies par sapratni!",
+    source: "Plašāk par drošības situāciju — CERT.LV",
+  },
   promoStrip: {
     senior: "Senioriem 65+",
     text1: "pilna pēdu aprūpe par",
@@ -301,6 +314,19 @@ const lv = {
 };
 
 const ru: typeof lv = {
+  booking: {
+    call: "Позвонить и записаться",
+    callShort: "Позвонить",
+  },
+  bookingNotice: {
+    title: "Онлайн-запись временно недоступна",
+    message: "Чтобы записаться на приём, пожалуйста, позвоните в регистратуру клиники.",
+    detailsLabel: "Почему онлайн-запись недоступна?",
+    reason: "В связи с обнаруженными в мире критическими уязвимостями PHP в качестве меры предосторожности временно ограничена доступность внешних сервисов интеграции. Эти меры затрагивают и онлайн-запись.",
+    restoration: "Ожидаем, когда поставщик сервиса установит и проверит необходимые обновления безопасности. После этого работа онлайн-записи будет восстановлена.",
+    thanks: "Эти меры принимаются для защиты данных пациентов. Приносим извинения за неудобства и благодарим за понимание!",
+    source: "Подробнее о ситуации с безопасностью — CERT.LV (на латышском)",
+  },
   "promoStrip": {
     "senior": "Пожилым 65+",
     "text1": "полный уход за стопами за",

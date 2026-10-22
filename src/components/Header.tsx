@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { dict, type Lang } from "@/i18n/dictionaries";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { BOOKING_URL } from "@/lib/site";
+import BookingLink from "@/components/BookingLink";
 
 const PHONE = "+37125455994";
 const PHONE_DISPLAY = "+371 25 455 994";
@@ -64,14 +64,13 @@ export default function Header({ lang }: { lang: Lang }) {
             </svg>
             {PHONE_DISPLAY}
           </a>
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <BookingLink
+            lang={lang}
+            compact
             className="bg-primary text-secondary-container text-xs font-bold uppercase tracking-widest px-6 py-3 rounded-xl hover:bg-primary-container hover:scale-[1.02] transition-all duration-200 shadow-md shadow-primary/20"
           >
             {t.header.book}
-          </a>
+          </BookingLink>
         </div>
 
         {/* Mobile burger */}
@@ -116,14 +115,12 @@ export default function Header({ lang }: { lang: Lang }) {
               {PHONE_DISPLAY}
             </a>
           </div>
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <BookingLink
+            lang={lang}
             className="bg-primary text-secondary-container text-sm font-bold uppercase tracking-widest px-6 py-3.5 rounded-xl text-center hover:bg-primary-container transition-colors duration-200 shadow-md shadow-primary/20"
           >
             {t.header.book}
-          </a>
+          </BookingLink>
         </div>
       )}
     </header>

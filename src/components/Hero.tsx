@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { dict, type Lang } from "@/i18n/dictionaries";
-import { BOOKING_URL } from "@/lib/site";
+import BookingLink from "@/components/BookingLink";
+import BookingNotice from "@/components/BookingNotice";
 
 export default function Hero({ lang }: { lang: Lang }) {
   const t = dict[lang].hero;
@@ -14,6 +15,7 @@ export default function Hero({ lang }: { lang: Lang }) {
       <div className="absolute -bottom-40 -left-32 w-[32rem] h-[32rem] rounded-full bg-surface-container/50 blur-3xl pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
+        <BookingNotice lang={lang} />
         <div className="grid md:grid-cols-[1.1fr_1fr] gap-10 lg:gap-16 items-center">
           {/* Text */}
           <div>
@@ -32,14 +34,12 @@ export default function Hero({ lang }: { lang: Lang }) {
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <BookingLink
+                lang={lang}
                 className="bg-gradient-to-r from-primary to-primary-container text-white text-sm font-semibold uppercase tracking-[0.05em] px-8 py-4 rounded-xl hover:scale-[1.02] transition-transform duration-200 shadow-lg shadow-primary/15 text-center"
               >
                 {t.ctaBook}
-              </a>
+              </BookingLink>
               <a
                 href="#pakalpojumi"
                 className="text-primary text-sm font-semibold uppercase tracking-[0.05em] px-8 py-4 rounded-xl border border-primary/20 hover:bg-primary/5 transition-colors duration-200 text-center"
