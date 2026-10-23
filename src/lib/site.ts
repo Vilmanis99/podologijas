@@ -7,9 +7,8 @@ export const SITE_URL = "https://podologijasklinika.lv";
 export const BOOKING_URL =
   "https://www.piearsta.lv/lv/iestazu-katalogs/podologijas-klinika-pardaugava-1830/";
 
-// Restore this after the provider confirms booking is safe and available.
 // Controls both the homepage notice and every appointment link.
-export const ONLINE_BOOKING_AVAILABLE = false;
+export const ONLINE_BOOKING_AVAILABLE = true;
 
 // The clinic's phone, in dialling and display form. Older components still
 // carry their own copies; new code should use these.

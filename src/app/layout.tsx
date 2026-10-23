@@ -22,7 +22,7 @@ const inter = Inter({
 
 const TITLE = "Podoloģijas Klīnika Pārdaugava | podologijasklinika.lv";
 const DESCRIPTION =
-  "Profesionāla pēdu veselības aprūpe Pārdaugavā. Podoloģija, medicīniskā pedikīra, nagu korekcija. Piesakieties vizītei.";
+  "Profesionāla pēdu veselības aprūpe Pārdaugavā. Podoloģija, medicīniskā pedikīra, nagu korekcija. Piesakieties vizītei online.";
 
 export const metadata: Metadata = {
   // Required for canonical/hreflang and OG image URLs to resolve as absolute.
